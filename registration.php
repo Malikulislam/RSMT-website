@@ -103,7 +103,7 @@
             </div>
 
             <input type="submit" name="submit" class="btn btn-primary" value="Register">
-            <a href="Main.html"><button type="button" class="btn btn-warning" >Back</button></a>
+            <a href="index.html"><button type="button" class="btn btn-warning" >Back</button></a>
         </form>
         <div>
             <div><p>Already registered?  <a href="login.php">Login here</a>.</p></div>
