@@ -40,7 +40,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
               <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password">
             </div>
             <button type="submit" class="btn btn-primary ">Login</button>
-            <a href="Main.html"><button type="button" class="btn btn-warning float-right" >Back</button></a>
+            <a href="index.html"><button type="button" class="btn btn-warning float-right" >Back</button></a>
 
     </form>
     </div>
