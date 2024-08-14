@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ERP Login</title>
+    </head>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    body{
+        background-image:url(https://wallpapercave.com/wp/wp9764020.jpg);
+        background-size: 120%;
+    }
+    .container{
+        text-align: center;
+        
+    
+    }
+    .sub-container {
+        border: 5px solid black;
+      background-image: url(https://wallpapercave.com/wp/wp9764020.jpg);
+        margin: 5% auto; /* Add this line to center the subcontainer */
+        width: 1000px;
+        text-align: center;
+        height:600px;
+        padding: 10px;
+    }
+    .sub-sub-container{
+        display: flex;
+      
+        margin: auto;
+    }
+    .login{
+        border: 2px solid black;
+        margin-top: 5px;
+        border-radius: 30px;
+       display:flex;
+        width: 180px;
+        height: 200px;
+        margin: 4% auto;
+        background-color: rgba(162, 198, 222, 0.664);
+    }
+    .login p{
+        margin: auto;
+        font-size:x-large;
+        background-color: black;
+        border-radius: 50px;
+        padding: 2px 4px;
+        filter: drop-shadow(3px 3px 15px #ff0000);
+
+    }
+    .login img{
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        margin: 5px auto ;
+        background-color: #002a5c;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        margin: auto;
+    }
+</style>
+    <body>
+        <iframe src="rsmt.html" width="100%" height="200" frameborder="0"
+            scrolling="no"></iframe>
+        <div class="container">
+            <div class="sub-container">
+                <div class="sub-sub-container">
+
+                    <div class="login">
+                        <a href="/admin.php">
+                            <img
+                                src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_login_man-1024.png">
+                            <p>Admin login</p>
+                        </a>
+                    </div>
+
+                    <div class="login">
+                        <a href="#">
+                            <img
+                                src="https://www.iconshock.com/image/SuperVista/Security/session">
+                            <p>Applicant login</p>
+                        </a>
+                    </div></div>
+                <div class="sub-sub-container">
+                    <div class="login">
+                        <a href="/teacher_login.php">
+                            <img
+                                src="https://www.freeiconspng.com/thumbs/login-icon/login-icon-png-27.png">
+                            <p>Teacher login</p></a>
+                    </div>
+                    <div class="login">
+                        <a href="/login.php">
+                            <img
+                                src="https://www.pcquest.com/wp-content/uploads/2016/08/ogin.png">
+                            <p> Student login</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

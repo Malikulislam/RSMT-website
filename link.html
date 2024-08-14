@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        body::-webkit-scrollbar{
+            display:none ;
+        }
+        .container{
+            background-color: #002a5c;
+            color: white;
+            height:900px
+        }
+        .list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            font-size: 24px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropbutn{
+            background-color: #002a5c;
+            color: white;
+            font-size: 24px;
+            border: none;
+        }
+        .drop-content{
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            z-index: 1;
+            border: 1px solid black;
+        }
+        .drop-content a{
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+        }
+        .dropdown:hover .drop-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <ul><b>
+                <li><a href="Main.html" target="_blank">Home</a></li><br>
+                <li><a href="https://rsmt.ac.in/cms/about-faqs/39" target="_blank">Contact Us</a></li><br>
+                <li><div class="dropdown">
+                    <button class="dropbutn">Programmes</button>
+                    <div class="drop-content">
+                        <a href="https://rsmt.ac.in/cms/bca/21" target="_blank">BCA</a>
+                        <a href="#">BBA</a>
+                        <a href="#">MCA</a>
+                        <a href="#">MBA</a>
+                    </div></li><br>
+                    <li><div class="dropdown">
+                        <button class="dropbutn">Admission</button>
+                        <div class="drop-content">
+                            <a href="#">Amission Procedure</a>
+                            <a href="#">Scholarship & Bank Finance</a>
+                            <a href="#">Hostel & Transportation</a>
+                            <a href="#">Fees Structure</a>
+                        </div></li><br>
+                        <li><div class="dropdown">
+                            <button class="dropbutn">Student Report</button>
+                            <div class="drop-content">
+                                <a href="#">Mentor mentee</a>
+                                <a href="#">Proctorial Board</a>
+                                <a href="#">Apply online for Certificates</a>
+                                <a href="#">Holiday list</a>
+                            </div></li><br>
+                            <li><div class="dropdown">
+                                <button class="dropbutn">Infrastructure</button>
+                                <div class="drop-content">
+                                    <a href="#">Computer Lab</a>
+                                    <a href="#">Libraray</a>
+                                    <a href="#">Seminar Hall</a>
+                                    <a href="#">Health Care</a>
+                                    <a href="#">Cafateria</a>
+                                    <a href="#">Hostel</a>
+                                    <a href="#">Sports</a>
+                                </div></li><br>
+                                <li><div class="dropdown">
+                                    <button class="dropbutn">Plaacement</button>
+                                    <div class="drop-content">
+                                        <a href="#">Training And Placement Cell</a>
+                                        <a href="#">Centre for Corporate Relation</a>
+                                        <a href="#">Placement Process</a>
+                                        <a href="#">List of Recuiters</a>
+                                        <a href="#">MBA Placement Reports</a>
+                                        <a href="#">MBA Training Reports</a>
+                                    </div></li><br>
+                                    <li><div class="dropdown">
+                                        <button class="dropbutn">Faculty</button>
+                                        <div class="drop-content">
+                                            <a href="#">Computer </a>
+                                            <a href="#">Management</a>
+                                        </div></li><br>
+                <li>Downloads</li><br>
+                <li>Contact Us</li><br>
+            </b></ul>
+        </div>
+    </div>
+</body>
+</html>

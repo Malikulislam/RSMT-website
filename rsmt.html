@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+      
+       a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        }
+        ul {
+        padding: 0;
+        list-style: none;
+        }
+       .header {
+        background-color:#002a5c
+        
+        }
+        .top-nav{
+        
+            line-height: 2;
+            vertical-align: middle;
+        }
+        .container{
+            width: 1140px;
+            max-width: 100%;
+            margin: auto;
+        }
+        .list{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            
+        }
+        .sub-nav{
+            background-color: white;
+            padding-top: 1rem;
+            padding-left: 3rem;
+        }
+        .sub-nav .container{
+            display: flex;
+            align-items: center;
+            padding-left: .75rem;
+            justify-content: space-between;
+          
+        }
+        .apply{
+            width: auto;
+            
+
+        }
+        .apply .btn{
+            
+            background-color: red;
+            color: white;
+            border-radius: 50rem;
+            padding: .5rem .8rem;
+            font-weight: 500;
+            font-size: larger;
+        }
+        .bottom-nav{
+            line-height: 25px;
+        }
+        .bottom-nav .container{
+            color: white;
+            margin-top: 5px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropbutn{
+            background-color: #002a5c;
+            color: white;
+           
+            border: none;
+        }
+        .drop-content{
+            display: none;
+            position: absolute;
+            background-color:whitesmoke;
+            width: 120px;
+            z-index: 1;
+            border: 1px solid black;
+        }
+        .drop-content a{
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+        }
+        .dropdown:hover .drop-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="top-nav container">
+            <ul class="list">
+            <li><div class="dropdown">
+                    <button class="dropbutn">ERP Login</button>
+                    <div class="drop-content">
+                        <a href="admin.php" target="_blank">Admin Login</a>
+                        <a href="teacher.php"target="_blank">Teacher Login</a>
+                        <a href="login.php"target="_blank">Student Login</a>
+                     
+                    </div></li><br>
+                <li><a href="#">IQAC</a></li>
+                <li><a href="#">Enquiry</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="sub-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://rsmt.ac.in/assets/images/logo.png">
+                </div>
+                <div class="apply">
+                    <a href="registration.php" target="_blank" class="btn">Apply Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="container">
+               <marquee> RAJARSHI SCHOOL OF MANAGEMENT AND TECHNOLOGY</marquee>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
